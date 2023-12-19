@@ -1,0 +1,29 @@
+.main {
+    text-align: center;
+}
+.thank-you h1 {
+    font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+    font-family: PingFang SC;
+    font-size: 28px;
+    font-weight: bold;
+}
+.thank-you h2 {
+    font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+    font-family: PingFang SC;
+    font-size: 20px;
+    font-weight: bold;
+}
+.my-goods {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.cg-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+.cg-quantity {
+    font-size: 16px;
+    font-weight: inherit;
+}

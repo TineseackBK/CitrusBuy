@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: center;  /* 将子元素居中 */
+}
+
+.radio-group label {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+    display: none;
+}
+
+.radio-group input[type="radio"]:checked + label {
+    background-color: #ccc;
+}
+
+.inputLabel {
+    font-size: 18px;
+}
+
+.form-btn {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+}
+.form-btn:active {
+    background-color: #ccc;
+}
+
+.addImageBtn {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+}
+
+.bar-manager{
+    height: 1000px;
+    display: flex;
+}
+.bar-manager.left{
+    padding: 10px;
+    float: left;
+    width: 35%;
+    background: #252221;
+}
+.bar-manager.right{
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.product-details {
+    text-align: center;
+    padding: 100px;
+}
+
+.cate {
+    overflow: auto;
+}
+.cate::-webkit-scrollbar {
+    display: none;
+}
+.category{
+    width: 44rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 5rem;
+}
+.category li{
+    margin-bottom: 8rem;
+    height: 2rem;
+    padding-left: 0.8rem;
+}
+.category li p{
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+}
+.mng-gl-item-wrap {
+    padding: 10px;
+    background: #f8b62b;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+}

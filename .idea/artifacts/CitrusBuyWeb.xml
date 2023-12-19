@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="CitrusBuyWeb">
+    <output-path>$PROJECT_DIR$/out/artifacts/CitrusBuyWeb</output-path>
+    <root id="archive" name="CitrusBuyWeb.war">
+      <element id="dir-copy" path="$PROJECT_DIR$/web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="CitrusBuy" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

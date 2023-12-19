@@ -1,0 +1,271 @@
+body{
+    background-color:#fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 顶部栏开始 */
+.header{
+    line-height: 10px;
+    padding: 10px;
+    height: 10px;
+}
+.btn{
+    padding: 2px;
+}
+/* 顶部栏结束 */
+
+/* 主体开始 */
+/* 搜索框 */
+.search-wrap{
+    background-color: #fff;
+    height: 11rem;
+}
+.logo{
+    width: 384px;
+    height: 108px;
+    background: url(../img/logo1.png) no-repeat center;
+    float: left;
+    background-size: contain;
+}
+.search-input{
+    width: 53.8rem;
+    height: 3.6rem;
+    float: right;
+    padding-top: 3rem;
+    padding-left: 3rem;
+}
+.search-input input:first-child{
+    width: 45rem;
+    height: 3.6rem;
+    border: 0.2rem solid #f8b62b;
+    box-sizing: border-box;
+    padding-left: 0.8rem;
+    font-size: 1.2rem;
+    float: left;
+}
+.search-input input:last-child{
+    width: 8rem;
+    height: 3.6rem;
+    background-color: #f8b62b;
+    color: #fff;
+    font-size: 1.5rem;
+    float: left;
+}
+/* 商品列表 */
+.bar{
+    height: 1000px;
+    display: flex;
+}
+/* 左侧商品分类栏 */
+.bar.left{
+    padding: 10px;
+    float: left;
+    width: 15%;
+    background: #252221;
+}
+.category{
+    width: 21rem;
+    height: 44rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.category li{
+    height: 2rem;
+    padding-left: 0.8rem;
+}
+.category li a{
+    color: #fff;
+}
+.category li a:hover{
+    color: #F8B62B;
+}
+.category li em{
+    color: #c0c0c0;
+    margin: 0 0.2rem;
+}
+/* 右侧商品栏 */
+.bar.right{
+    flex-grow: 1;
+    flex-direction: column;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* 筛选栏 ul | 内容：综合 销量 价格 */
+.filter{
+    padding: 10px;
+    height: 3.6rem;
+    line-height: 3.6rem;
+    background: goldenrod;
+}
+.ranking{
+    padding: 2px;
+    float: left;
+}
+.rank{
+    float: left;
+}
+/* li */
+.rk{
+    float: left;
+}
+.rk a{
+    color: #fff;
+}
+.rk a:hover{
+    color: #F8B62B;
+}
+.rk em{
+    color: #fff;
+    margin: 0 0.2rem;
+}
+.goods{
+    flex: 1;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    gap: 20px;
+    padding: 10px;
+    background: #e3e4e5;
+}
+.gli-image img{
+    max-width: 300px !important;
+    max-height: 300px !important;
+}
+.gli-price p{
+    font-weight: 400;
+    font-family: Verdana;
+    color: #e4393c;
+    font-size: 20px;
+}
+.cart-btn {
+    float: right;
+    position: relative;
+    left: -8px;
+    font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+    font-size: 100%;
+    border-radius: 0;
+    outline: 0;
+    font-family: PingFang SC;
+    border: 0;
+    cursor: pointer;
+    height: 40px;
+    line-height: 22px;
+    text-align: center;
+    padding: 0 6px;
+    border-radius: 28px;
+    background: linear-gradient(90deg, rgb(255, 203, 0), rgb(255, 148, 2));
+    box-shadow: rgba(255, 203, 0, 0.2) 0px 9px 13px 0px;
+    vertical-align: top;
+}
+.add-to-cart-btn {
+    padding: 9px;
+    font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+    font-family: PingFang SC;
+    cursor: pointer;
+    line-height: 22px;
+    text-align: center;
+    display: inline;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background: transparent;
+}
+.remove-from {
+    float: left;
+    position: relative;
+    font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+    font-size: 100%;
+    border-radius: 0;
+    outline: 0;
+    font-family: PingFang SC;
+    border: 0;
+    cursor: pointer;
+    height: 20px;
+    line-height: 16px;
+    text-align: center;
+    padding: 0 6px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, rgb(255, 203, 0), rgb(255, 148, 2));
+    box-shadow: rgba(255, 203, 0, 0.2) 0px 9px 13px 0px;
+    vertical-align: top;
+}
+.remove-from-cart-btn {
+    font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+    font-family: PingFang SC;
+    cursor: pointer;
+    line-height: 22px;
+    text-align: center;
+    display: inline;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background: transparent;
+}
+
+.cart {
+    position: fixed;
+    top: 300px;
+    right: 20px;
+}
+.cart-inner {
+    display: block;
+    text-decoration: none;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.checkout {
+    font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+    font-size: 100%;
+    border-radius: 0;
+    outline: 0;
+    font-family: PingFang SC;
+    border: 0;
+    cursor: pointer;
+    height: 28px;
+    line-height: 22px;
+    text-align: center;
+    padding: 0 6px;
+    border-radius: 14px;
+    background: linear-gradient(90deg, rgb(255, 203, 0), rgb(255, 148, 2));
+    box-shadow: rgba(255, 203, 0, 0.2) 0px 9px 13px 0px;
+    vertical-align: top;
+}
+.checkout-btn {
+    padding-top: 3px;
+    font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+    font-family: PingFang SC;
+    cursor: pointer;
+    line-height: 22px;
+    text-align: center;
+    display: inline;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background: transparent;
+}
+.total-price {
+    font-weight: 400;
+    font-family: Verdana;
+    color: #e4393c;
+    font-size: 20px;
+}
+.cart-items {
+    text-align: justify;
+}
+/* 主体结束 */
+
+/* 页尾开始 */
+.footer{
+    text-align: center;
+    line-height: 10px;
+    padding: 10px;
+    background: #e3e4e5;
+}
+/* 页尾结束 */
